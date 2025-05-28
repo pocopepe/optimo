@@ -98,7 +98,7 @@ const PatientsInQueuePage: React.FC<PatientsInQueuePageProps> = ({ navigate, pat
         return;
       }
 
-      const response = await fetch(`http://localhost:8787/patients/${selectedPatientDetails.id}/visit`, {
+      const response = await fetch(`https://server.avijusanjai.workers.dev/patients/${selectedPatientDetails.id}/visit`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

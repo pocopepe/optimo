@@ -10,7 +10,7 @@ const CustomerLoginModal: React.FC<{
 
   const handleLogin = async () => {
     try {
-      const response = await fetch('http://localhost:8787/customer-login', {
+      const response = await fetch('https://server.avijusanjai.workers.dev/customer-login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),

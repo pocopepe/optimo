@@ -27,7 +27,7 @@ const getAuthToken = (): string | null => localStorage.getItem('authToken');
 
 // Helper function to fetch authenticated role data from the backend API
 const getAuthenticatedRoleData = async (token: string): Promise<AuthenticatedRoleData> => {
-  const response = await fetch('http://localhost:8787/patient-data', { 
+  const response = await fetch('https://server.avijusanjai.workers.dev/patient-data', { 
     headers: {
       'Authorization': `Bearer ${token}`, // Include the auth token in headers
     },

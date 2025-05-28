@@ -12,7 +12,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ navigate, role }) => {
 
     try {
       // *** CHANGE THIS LINE ***
-      const response = await fetch('http://localhost:8787/login', { // Changed to 8787
+      const response = await fetch('https://server.avijusanjai.workers.dev/login', { // Changed to 8787
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
